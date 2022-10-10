@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    <link rel="icon" href="./dist/img/pestaña.png" />
+    <link rel="stylesheet" type="text/css" href="./dist/css/styles.css">
+</head>
+
+<body>
+
+    <!--Inicio de la cabecera-->
+    <header class="header header--sticky">
+        <section class="header-wrap wrap-contain">
+            <div class="top-logo">
+                <img class="wrap-img" src="./dist/img/logo.svg" alt="Shortly">
+            </div>
+            <nav class="wrap-menu" role="navigation">
+                <ul class="wrap-menu-list wrap-menu-list--navigation">
+                    <li class="wrap-menu-list__item">
+                        <a href="#">Features</a>
+                    </li>
+                    <li class="wrap-menu-list__item">
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li class="wrap-menu-list__item">
+                        <a href="#">Resources</a>
+                    </li>
+                </ul>
+                <ul class="wrap-menu-list__item-1 wrap-menu-list-user">
+                    <li class="wrap-menu-list__item"><a href="#">Login</a></li>
+                    <li class="wrap-menu-list__item"><a class="btn btn--cyan" href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+            <div class="wrap-menu-hamburguer" id="wrap-menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+    </header>
+    <!--Fin de la cabecera-->
+
+    <!--Inicio del contenido-->
+    <main class="main">
+        <section class="arrival-content">
+            <article class="arrival-contain">
+
+                <img src="./dist/img/illustration-working.svg" alt="Illustration">
+
+                <div class="arrival">
+                    <h1 class="arrival-title">More than just shorter links</h1>
+                    <p class="arrival-paragraph">Build your brand’s recognition and get detailed insights on how your links are performing.
+                    </p>
+                    <button type="button" class="btn btn--cyan btn..left get-started">Get Started</button>
+                </div>
+            </article>
+        </section>
+        <section class="clip-content">
+            <article class="clip-informative wrapper-contain">
+                <form class="clip-form" id="clip-form" autocomplete="off">
+                    <div class="clip-form-set">
+                        <input type="text" class="clip-form__input" id="clip-form__input" placeholder="Shorten a link here..." pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$">
+                        <span>Please add a link...</span>
+                    </div>
+                    <input type="submit" class="btn btn--cyan btn--blockade" id="clip-form__submit" value="Shorten It!">
+                </form>
+            </article>
+            <article class="progressive wrapper-contain">
+                <div class="progressive__header">
+                    <h2 class="progressive-title progressive-title--1">Advanced Statistics</h2>
+                    <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+                </div>
+                <div class="progressive-benefits">
+                    <div class="benefits benefits-recognition">
+                        <img src="./dist/img/icon-brand-recognition.svg" alt="Brand Recognition">
+                        <h3>Brand Recognition</h3>
+                        <p>Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+                    </div>
+                    <div class="benefits benefits-records">
+                        <img src="./dist/img/icon-detailed-records.svg" alt="Detailed Records">
+                        <h3>Detailed Records</h3>
+                        <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                    </div>
+                    <div class="benefits benefits-customizable">
+                        <img src="./dist/img/icon-fully-customizable.svg" alt="Fully Customizable">
+                        <h3>Fully Customizable</h3>
+                        <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!--Fin del contenido-->
+
+    <!--Inicio del footer-->
+    <footer id="footer">
+        <section class="footer-deposit">
+            <article class="footer-firstly">
+                <div class="capsule-theme">
+                    <h2 class="title title--white">Boost your links today</h2>
+                    <button type="button" class="btn btn--cyan get-started">Get Started</button>
+                </div>
+            </article>
+            <article class="footer-finally">
+                <div class="coating-affair">
+                    <div class="footer-finally__logo">
+                        <img src="./dist/img/logo-white.svg" alt="Shortly">
+                    </div>
+                    <div class="footer-finally__bond">
+                        <ul class="bond-footer">
+                            <li class="bond-footer__item">
+                                <h4>Features</h4>
+                            </li>
+                            <li class="bond-footer__item"><a href="#">Link Shortening</a></li>
+                            <li class="bond-footer__item"><a href="#">Branded Links</a></li>
+                            <li class="bond-footer__item"><a href="#">Analytics</a></li>
+                        </ul>
+                        <ul class="bond-footer">
+                            <li class="bond-footer__item">
+                                <h4>Resources</h4>
+                            </li>
+                            <li class="bond-footer__item"><a href="#">Blog</a></li>
+                            <li class="bond-footer__item"><a href="#">Developers</a></li>
+                            <li class="bond-footer__item"><a href="#">Support</a></li>
+                        </ul>
+                        <ul class="bond-footer">
+                            <li class="bond-footer__item">
+                                <h4>Company</h4>
+                            </li>
+                            <li class="bond-footer__item"><a href="#">About</a></li>
+                            <li class="bond-footer__item"><a href="#">Out Team</a></li>
+                            <li class="bond-footer__item"><a href="#">Careers</a></li>
+                            <li class="bond-footer__item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-finally__social-networks">
+                        <ul class="social-networks">
+                            <li class="social-networks__facebook">
+                                <a href="#"></a>
+                            </li>
+                            <li class="social-networks__twitter">
+                                <a href="#"></a>
+                            </li>
+                            <li class="social-networks__pinterest">
+                                <a href="#"></a>
+                            </li>
+                            <li class="social-networks__instagram">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </footer>
+    <!--Fin del footer-->
+</body>
+
+</html>

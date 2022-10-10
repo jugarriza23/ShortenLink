@@ -1,0 +1,104 @@
+/*ENCABEZADO*/
+
+header .wrap-list--navigation {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #514375;
+}
+
+.header {
+    background: $white;
+    height: 112px;
+    &--sticky {
+        flex-grow: 1;
+        box-shadow: 0px 0px 6px 0px $tono-claro-medio-azul-magenta;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        &+main {
+            position: relative;
+            top: 115px;
+        }
+    }
+    &-wrap {
+        justify-content: space-between;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        transition: all 300ms;
+    }
+}
+
+.wrap-contain {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 20px 40px 20px;
+    margin-left: 40px;
+    top: 15;
+}
+
+.wrap-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+
+header .wrap-menu {
+    @include wrapMenu ();
+}
+
+.wrap-menu-list {
+    @include wrapList ();
+}
+
+.wrap-menu-list__item a {
+    @include wrapItem ();
+}
+
+.btn {
+    @include crearLinks();
+}
+
+.wrap-menu-list__item a:hover {
+    color: $black;
+}
+
+.wrap-menu-list__item-1 {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.wrap-menu-list__item .btn {
+    font-family: $f-bold;
+    color: $white;
+    margin-top: 0px;
+    width: 104px;
+    align-items: center;
+}
+
+.wrap-menu-list__item {
+    .btn:hover {
+        color: $white;
+    }
+    .btn--cyan {
+        display: flex;
+        background: $tono-cyan;
+        border: 1px solid $tono-cyan;
+        border-radius: 25px;
+        padding: 12px 20px;
+        transition: all 300ms;
+    }
+}
+
+.btn--cyan:hover {
+    @include hover();
+}
+
+.wrap-menu-list__item-1 .btn--cyan {
+    line-height: 9px;
+}

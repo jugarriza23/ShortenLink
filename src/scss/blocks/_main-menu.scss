@@ -1,0 +1,52 @@
+.wrap-menu {
+    @include wrapMenu ();
+}
+
+.wrap-list {
+    @include wrapList ();
+}
+
+.wrap-item a {
+    @include wrapItem ();
+}
+
+.wrap-item a:hover {
+    color: $black;
+}
+
+.wrap-list-1 {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.wrap-item .btn {
+    font-family: $f-bold;
+    color: $white;
+    margin-top: 0px;
+    width: 104px;
+    align-items: center;
+}
+
+.wrap-item {
+    .btn:hover {
+        color: $white;
+    }
+    .btn--cyan {
+        display: flex;
+        background: $tono-cyan;
+        border: 1px solid $tono-cyan;
+        border-radius: 25px;
+        padding: 12px 20px;
+        transition: all 300ms;
+    }
+}
+
+.btn--cyan:hover {
+    @include hover();
+}
+
+.wrap-list-1 .btn--cyan {
+    line-height: 9px;
+}
